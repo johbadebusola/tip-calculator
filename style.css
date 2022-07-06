@@ -1,3 +1,46 @@
 body{
     background-color: hsl(185, 41%, 84%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
+#container{
+   background-color:hsl(0, 0%, 100%);
+    width: 70%;
+ border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+
+}
+
+/* Styling Second grid */
+#grid1{
+    padding:1em ;
+}
+ #buttons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap:6px;
+  
+    height: 40px;
+}
+#buttons > #btn{
+    color:white;
+    background-color:hsl(183, 100%, 15%);
+}
+/* Styling Second grid */
+#grid2{
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 8px;
+    padding: 1em;
+}
+#container > #grid2 > button{
+    width: 100%;
+    height: 2em;
+}
+
