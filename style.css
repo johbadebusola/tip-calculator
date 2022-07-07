@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Space+Mono&display=swap');
 body{
     background-color: hsl(185, 41%, 84%) ;
     display: flex;
@@ -13,26 +14,26 @@ body{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    padding: 1em;
-
+    padding:1em;
 }
 
 /* Styling Second grid */
 #grid1{
-    padding:1em ;
+    padding:1em;
 }
  #buttons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-gap:6px;
-  
-    height: 40px;
+    grid-template-rows: repeat(2,30px);
+    grid-gap:9px;
 }
 #buttons > #btn{
     color:white;
     background-color:hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: none;
 }
+
 /* Styling Second grid */
 #grid2{
     background-color:hsl(183, 100%, 15%);
@@ -42,5 +43,30 @@ body{
 #container > #grid2 > button{
     width: 100%;
     height: 2em;
+    margin-top: 2.5em;
+}
+#box4, #box5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#box4 > #p2{
+    margin-top: 0.7em;
+    font-size:2em;
+    color: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace;
+}
+#box4 > p > span{
+    font-size:0.6rem;
+}
+#box4 > p {
+color: white;
+font-size:0.8rem;
 }
 
+#box5 > #p2{
+    margin-top: 0.7em;
+    font-size:2em;
+    color: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace;
+}
