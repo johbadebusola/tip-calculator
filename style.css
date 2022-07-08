@@ -9,7 +9,7 @@ body{
 
 #container{
    background-color:hsl(0, 0%, 100%);
-    width: 60%;
+    min-width: 60%;
  border-radius: 15px;
     display: grid;
     grid-template-rows: 1fr;
@@ -19,15 +19,6 @@ body{
 
 
 /* styling for first grid */
-#container > #grid1 > #box1 > p{
-    font-family: 'Space Mono', monospace;
-    font-size: 0.7em;
-}
-
-#container > #grid1 > #box1 > input{
-    width: 97%;
-}
-/* Styling Second grid */
 #grid1{
     padding:1em;
 }
@@ -42,7 +33,39 @@ body{
     background-color:hsl(183, 100%, 15%);
     border-radius: 5px;
     border: none;
+    font-family: 'Space Mono', monospace;
 }
+
+#container > #grid1 > #box1 > p{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7em;
+}
+
+#container > #grid1 > #box1 > input{
+    width: 97%;
+    height: 22px;
+}
+
+#container > #grid1 > #box3 > input{
+    width: 97%;
+    height: 22px;
+}
+
+#container > #grid1 > #box1 > input::placeholder {
+    color: red;
+    float: right;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5em;
+}
+
+#container > #grid1 > #box3 > input::placeholder {
+    color: red;
+    float: right;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5em;
+}
+
+
 
 /* Styling Second grid */
 #grid2{
