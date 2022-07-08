@@ -28,9 +28,9 @@ body{
     grid-template-rows: repeat(2,30px);
     grid-gap:9px;
 }
-#buttons > #btn{
+ #btn{
     color:white;
-    background-color:hsl(183, 100%, 15%);
+    /* background-color:hsl(183, 100%, 15%); */
     border-radius: 5px;
     border: none;
     font-family: 'Space Mono', monospace;
@@ -44,11 +44,15 @@ body{
 #container > #grid1 > #box1 > input{
     width: 97%;
     height: 22px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
 }
 
 #container > #grid1 > #box3 > input{
     width: 97%;
     height: 22px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
 }
 
 #container > #grid1 > #box1 > input::placeholder {
@@ -65,13 +69,22 @@ body{
     font-size: 1.5em;
 }
 
-
+#grid1 > #box2 > p{
+    font-family: 'Space Mono', monospace;  
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+#grid1 > #box3 > p{
+    font-family: 'Space Mono', monospace;  
+    font-size: 0.7em;
+    margin-top: 2em;
+}
 
 /* Styling Second grid */
 #grid2{
     background-color:hsl(183, 100%, 15%);
     border-radius: 8px;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 #container > #grid2 > button{
@@ -79,7 +92,7 @@ body{
     height: 2em;
     margin-top: 2.5em;
     font-family: 'Space Mono', monospace;
-    background-color:hsl(172, 64%, 27%);
+    background-color: hsl(183, 100%, 10%);
     border: none;
 }
 #box4, #box5{
@@ -116,4 +129,9 @@ font-family: 'Space Mono', monospace;
     font-size:0.8rem;
     font-family: 'Space Mono', monospace;
 
+    }
+
+    /* hover effect on tips button */
+.active{
+        background-color: blue ;
     }
