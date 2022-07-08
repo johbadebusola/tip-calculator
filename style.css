@@ -43,10 +43,17 @@ body{
 
 #container > #grid1 > #box1 > input{
     width: 97%;
-    height: 22px;
+    height: 29px;
     background-color: hsl(189, 41%, 97%);
     border: none;
     border-radius: 3px;
+    /* display:flex; 
+    justify-content:flex-end;  */
+    text-align: right;
+    font-size: 1.2em;
+    color: hsl(183, 100%, 15%);
+   font-family: 'Space Mono', monospace;
+   font-weight: bold;
 }
 
 #container > #grid1 > #box1 > input:hover{
@@ -64,7 +71,7 @@ body{
     color: red;
     float: right;
     font-family: 'Space Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 
@@ -111,6 +118,7 @@ body{
     font-size:2em;
     color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
+    font-weight: bold;
 }
 #box4 > p > span, #box5 > p > span{
     font-size:0.6rem;
@@ -128,6 +136,7 @@ font-family: 'Space Mono', monospace;
     font-size:2em;
     color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
+    font-weight: bold;
 }
 
 #box5 > p {
