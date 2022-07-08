@@ -9,7 +9,7 @@ body{
 
 #container{
    background-color:hsl(0, 0%, 100%);
-    width: 70%;
+    width: 60%;
  border-radius: 15px;
     display: grid;
     grid-template-rows: 1fr;
@@ -17,6 +17,16 @@ body{
     padding:1em;
 }
 
+
+/* styling for first grid */
+#container > #grid1 > #box1 > p{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7em;
+}
+
+#container > #grid1 > #box1 > input{
+    width: 97%;
+}
 /* Styling Second grid */
 #grid1{
     padding:1em;
@@ -40,10 +50,14 @@ body{
     border-radius: 8px;
     padding: 1em;
 }
+
 #container > #grid2 > button{
     width: 100%;
     height: 2em;
     margin-top: 2.5em;
+    font-family: 'Space Mono', monospace;
+    background-color:hsl(172, 64%, 27%);
+    border: none;
 }
 #box4, #box5{
     display: flex;
@@ -51,22 +65,32 @@ body{
     justify-content: space-between;
 }
 #box4 > #p2{
-    margin-top: 0.7em;
+    margin-top:-0em ;
     font-size:2em;
     color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
 }
-#box4 > p > span{
+#box4 > p > span, #box5 > p > span{
     font-size:0.6rem;
+    
 }
+
 #box4 > p {
 color: white;
 font-size:0.8rem;
+font-family: 'Space Mono', monospace;
 }
 
 #box5 > #p2{
-    margin-top: 0.7em;
+    margin-top:-0em ;
     font-size:2em;
     color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
 }
+
+#box5 > p {
+    color: white;
+    font-size:0.8rem;
+    font-family: 'Space Mono', monospace;
+
+    }
