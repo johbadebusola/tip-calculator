@@ -4,7 +4,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
+    flex-direction: column;
+    
 }
 
 #container{
@@ -15,6 +17,10 @@ body{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     padding:1em;
+}
+
+#logo{
+    margin-bottom: 5em;
 }
 
 
@@ -204,5 +210,8 @@ font-family: 'Space Mono', monospace;
         margin-top: -1em;
     }
     
-    
+    #logo{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
 }
