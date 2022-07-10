@@ -4,12 +4,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
+    flex-direction: column;
+    
 }
 
 #container{
    background-color:hsl(0, 0%, 100%);
-    width: 60%;
+    min-width: 60%;
  border-radius: 15px;
     display: grid;
     grid-template-rows: 1fr;
@@ -17,17 +19,24 @@ body{
     padding:1em;
 }
 
+#logo{
+    margin-bottom: 5em;
+}
+#container > #grid1 > #box1 > #svg{
+    display: flex;
+    position: absolute;
+    margin-top: 0.4em;
+    padding-left: 1em;
+}
+
+#container > #grid1 > #box3 > #blu{
+    display: flex;
+    position: absolute;
+    margin-top: 0.4em;
+    padding-left: 1em;
+}
 
 /* styling for first grid */
-#container > #grid1 > #box1 > p{
-    font-family: 'Space Mono', monospace;
-    font-size: 0.7em;
-}
-
-#container > #grid1 > #box1 > input{
-    width: 97%;
-}
-/* Styling Second grid */
 #grid1{
     padding:1em;
 }
@@ -37,38 +46,118 @@ body{
     grid-template-rows: repeat(2,30px);
     grid-gap:9px;
 }
-#buttons > #btn{
+ #btn{
     color:white;
-    background-color:hsl(183, 100%, 15%);
+    /* background-color:hsl(183, 100%, 15%); */
     border-radius: 5px;
     border: none;
+    font-family: 'Space Mono', monospace;
+}
+
+#btn:hover{
+    background-color:red;
+}
+
+
+#container > #grid1 > #box1 > p{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7em;
+    margin-top: -0.5em;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+}
+
+#container > #grid1 > #box1 > input{
+    width: 97%;
+    height: 29px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 3px;
+    /* display:flex; 
+    justify-content:flex-end;  */
+    text-align: right;
+    font-size: 1.2em;
+    color: hsl(183, 100%, 15%);
+   font-family: 'Space Mono', monospace;
+   font-weight: bold;
+}
+
+#container > #grid1 > #box1 > input:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+#container > #grid1 > #box3 > input{
+    width: 97%;
+    height: 29px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: right;
+    font-size: 1.2em;
+    color: hsl(183, 100%, 15%);
+   font-family: 'Space Mono', monospace;
+   font-weight: bold;
+}
+
+#container > #grid1 > #box1 > input::placeholder {
+    color: hsl(183, 40%, 40%);
+    float: right;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2em;
+}
+
+
+#container > #grid1 > #box3 > input::placeholder {
+    color: hsl(183, 40%, 40%);
+    float: right;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2em;
+}
+
+#grid1 > #box2 > p{
+    font-family: 'Space Mono', monospace;  
+    font-size: 0.7em;
+    margin-top: 2em;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+}
+#grid1 > #box3 > p{
+    font-family: 'Space Mono', monospace;  
+    font-size: 0.7em;
+    margin-top: 2em;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
 }
 
 /* Styling Second grid */
 #grid2{
     background-color:hsl(183, 100%, 15%);
     border-radius: 8px;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 #container > #grid2 > button{
     width: 100%;
-    height: 2em;
+    height: 2.5em;
     margin-top: 2.5em;
     font-family: 'Space Mono', monospace;
-    background-color:hsl(172, 64%, 27%);
+    background-color: hsl(183, 100%, 10%);
     border: none;
+    font-weight: bold;
 }
 #box4, #box5{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: bold;
 }
 #box4 > #p2{
     margin-top:-0em ;
     font-size:2em;
     color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
+    font-weight: bold;
 }
 #box4 > p > span, #box5 > p > span{
     font-size:0.6rem;
@@ -81,11 +170,12 @@ font-size:0.8rem;
 font-family: 'Space Mono', monospace;
 }
 
-#box5 > #p2{
+#box5 > #p3{
     margin-top:-0em ;
     font-size:2em;
     color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
+    font-weight: bold;
 }
 
 #box5 > p {
@@ -94,9 +184,56 @@ font-family: 'Space Mono', monospace;
     font-family: 'Space Mono', monospace;
 
     }
-    /* Media */
-    @media (max-width: 375px) {
-        #container{
-            grid-template-columns: 1fr;
-        }  
+
+    /* hover effect on tips button */
+.active{
+        background-color: blue ;
     }
+
+ /* responsiveness for mobile screen */
+@media  (max-width:557px){
+    #container{
+         min-width: 99%;
+         border-top: 40px;
+         display: grid;
+         grid-template-columns:1fr;
+         border-top-left-radius: 30px;
+         border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+         border-top-right-radius: 30px;
+     }
+     #grid1{
+        margin:1.5em;
+    }
+    #grid2{
+        margin:1.5em;
+        margin-top: 0px;
+    }
+    #buttons{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap:9px;
+    }
+    #buttons > #btn{
+        background-color: hsl(183, 100%, 15%);
+        font-size: large;
+        font-weight: bold;
+        padding: 8px;
+        
+    }
+    #container > #grid2 > button{
+        margin-top: 0em;
+    }
+    #box5{
+        margin-top: -1em;
+    }
+    
+    #logo{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    #btn:hover{
+        background-color:red;
+    }
+   
+}
