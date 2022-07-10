@@ -94,3 +94,9 @@ font-family: 'Space Mono', monospace;
     font-family: 'Space Mono', monospace;
 
     }
+    /* Media */
+    @media (max-width: 375px) {
+        #container{
+            grid-template-columns: 1fr;
+        }  
+    }
