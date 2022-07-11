@@ -70,11 +70,7 @@ To see how you can add code snippets, see below:
 const proudOfThisFunc = () => {
   console.log('🎉# Continued development)
 }
-
-
-
-
-
+```
 
 ##  Author
 
