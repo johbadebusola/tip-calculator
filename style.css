@@ -48,7 +48,7 @@ body{
 }
  #btn{
     color:white;
-    /* background-color:hsl(183, 100%, 15%); */
+    background-color:hsl(183, 100%, 15%); 
     border-radius: 5px;
     border: none;
     font-family: 'Space Mono', monospace;
@@ -57,7 +57,6 @@ body{
 #btn:hover{
     background-color:red;
 }
-
 
 #container > #grid1 > #box1 > p{
     font-family: 'Space Mono', monospace;
@@ -84,6 +83,13 @@ body{
 
 #container > #grid1 > #box1 > input:hover{
     border: 2px solid hsl(172, 67%, 45%);
+}
+
+#container > #grid1 > #box2 > #buttons > .Custom{
+    background-color:  hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #container > #grid1 > #box3 > input{
@@ -146,6 +152,13 @@ body{
     border: none;
     font-weight: bold;
 }
+
+#container > #grid2 > #reset{
+    background-color:  hsl(172, 67%, 45%);
+    opacity: 40%;
+    border-radius: 0.3em;
+}
+
 #box4, #box5{
     display: flex;
     flex-direction: row;
