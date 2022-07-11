@@ -12,6 +12,10 @@ tipBtn.forEach(e =>{
 })
 
 function calculate(){
+    tipBtn.forEach(e => {
+        e.classList.remove("active")
+    })
+    this.classList.add("active");
 // To validate if number of people is entered
 if (numOfPeople.value.trim() === "") {
     numOfPeople.setAttribute("style","border: 2px solid red")
@@ -40,4 +44,6 @@ reset.addEventListener("click", e =>{
     tipAmountOutput.innerHTML = "$0.00";
     reset.setAttribute("style","background-color:hsl(183, 100%, 10%);")
 })
+
+
 

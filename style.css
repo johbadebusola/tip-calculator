@@ -54,6 +54,9 @@ body{
     min-width: 30%;
 
 }
+.custom:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
  .custom::placeholder{
    text-align: center;
     color: hsl(183, 40%, 40%);
@@ -69,7 +72,8 @@ body{
 }
 
 #btn:hover{
-    background-color:hsl(183, 40%, 40%);
+    background-color:hsl(172, 67%, 45%);
+ 
 }
 
 #container > #grid1 > #box1 > p{
@@ -213,7 +217,7 @@ font-family: 'Space Mono', monospace;
 
     /* hover effect on tips button */
 .active{
-        background-color: blue ;
+        background-color:    hsl(183, 40%, 40%) !important;
     }
 
  /* responsiveness for mobile screen */
