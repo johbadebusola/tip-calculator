@@ -1,4 +1,5 @@
 
+
 let bill = document.querySelector("#bill");
 let numOfPeople = document.querySelector("#people");
 let tipBtn = document.querySelectorAll("#btn");
@@ -39,3 +40,4 @@ reset.addEventListener("click", e =>{
     tipAmountOutput.innerHTML = "$0.00";
     reset.setAttribute("style","background-color:hsl(183, 100%, 10%);")
 })
+
