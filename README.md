@@ -42,7 +42,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://johbadebusola.github.io/tip-calculator/)
+- Solution URL: [Live view](https://johbadebusola.github.io/tip-calculator/)
 
 ## My process
 
@@ -68,7 +68,8 @@ To see how you can add code snippets, see below:
 ```
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉# Continued development
+  console.log('🎉# Continued development)
+}
 
 
 
