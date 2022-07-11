@@ -69,7 +69,13 @@ To see how you can add code snippets, see below:
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉# Continued development
-## Author
+
+
+
+
+
+
+##  Author
 
 - Website - [View tip calculator](https://johbadebusola.github.io/tip-calculator/)
 - Twitter - [@longjonny0](https://mobile.twitter.com/longjonny0)
