@@ -26,14 +26,14 @@ body{
 #container > #grid1 > #box1 > #svg{
     display: flex;
     position: absolute;
-    margin-top: 0.4em;
+    margin-top: 0.7em;
     padding-left: 1em;
 }
 
 #container > #grid1 > #box3 > #blu{
     display: flex;
     position: absolute;
-    margin-top: 0.4em;
+    margin-top: 0.7em;
     padding-left: 1em;
 }
 
@@ -52,6 +52,11 @@ body{
     border-radius: 5px;
     border: none;
     min-width: 30%;
+    font-weight:bold;
+text-align: right;
+    font-size: 1.2em;
+    color: hsl(183, 100%, 15%);
+   font-family: 'Space Mono', monospace;
 
 }
 .custom:hover{
