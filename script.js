@@ -5,7 +5,7 @@ let numOfPeople = document.querySelector("#people");
 let tipBtn = document.querySelectorAll("#btn");
 let tipAmountOutput = document.querySelector("#p2");
 let totalBillPerPersonOutput = document.querySelector("#p3");
-
+let errorMessage = document.querySelector("#error")
 // looping through each of the tip button
 tipBtn.forEach(e =>{
     e.addEventListener("click", calculate)
@@ -18,10 +18,12 @@ function calculate(){
     this.classList.add("active");
 // To validate if number of people is entered
 if (numOfPeople.value.trim() === "") {
-    numOfPeople.setAttribute("style","border: 2px solid red")
+    numOfPeople.setAttribute("style","border: 2px solid tomato");
+    errorMessage.style.opacity = "1";
     return;
 }else{
-    numOfPeople.setAttribute("style","border: 2px solid green")
+    numOfPeople.setAttribute("style","border: none")
+    errorMessage.style.opacity = "0";
 }
 
 // Calculations for amount of tip per person

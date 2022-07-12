@@ -146,14 +146,21 @@ body{
     font-weight: bold;
     color: hsl(183, 100%, 15%);
 }
-#grid1 > #box3 > p{
+#grid1 > #box3 > #Ps {
+    display: flex;
+    justify-content: space-between;
+}
+#grid1 > #box3 > #Ps > p{
     font-family: 'Space Mono', monospace;  
     font-size: 0.7em;
     margin-top: 2em;
     font-weight: bold;
     color: hsl(183, 100%, 15%);
 }
-
+#error{
+    color: tomato !important;
+    opacity: 0;
+}
 /* Styling Second grid */
 #grid2{
     background-color:hsl(183, 100%, 15%);
@@ -221,7 +228,7 @@ font-family: 'Space Mono', monospace;
     }
 
  /* responsiveness for mobile screen */
-@media  (max-width:858px){
+@media  (max-width:871px){
     #container{
          min-width: 99%;
          border-top: 40px;
