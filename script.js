@@ -36,7 +36,8 @@ let totalBillPerPerson = +billPerPerson + +tipAmountPerPerson;
 totalBillPerPersonOutput.innerHTML = "$" +  totalBillPerPerson.toFixed(2);
 console.log(totalBillPerPerson.toFixed(2));
 
-reset.setAttribute("style","background-color:hsl(172, 67%, 45%);")
+reset.setAttribute("style","background-color:hsl(172, 67%, 45%); color:hsl(183, 100%, 15%);")
+
 }
 
 //Reset button
