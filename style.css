@@ -177,8 +177,13 @@ body{
 }
 
 #container > #grid2 > #reset{
-    opacity: 40%;
-    border-radius: 0.3em;
+    border-radius: 6px;
+    height:45px;
+    font-weight:bold;
+    font-size:1em;
+    font-family: 'Space Mono', monospace;
+    color:hsl(183, 100%, 15%);
+
 }
 
 #box4, #box5{
