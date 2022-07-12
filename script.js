@@ -45,6 +45,8 @@ let reset = document.querySelector("#reset");
 reset.addEventListener("click", e =>{
     totalBillPerPersonOutput.innerHTML = "$0.00";
     tipAmountOutput.innerHTML = "$0.00";
+    bill.value = "";
+    numOfPeople.value = "";
     reset.setAttribute("style","background-color:hsl(183, 100%, 10%);")
 })
 
