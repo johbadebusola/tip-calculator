@@ -126,7 +126,6 @@ body{
 
 #container > #grid1 > #box1 > input::placeholder {
     color: hsl(183, 40%, 40%);
-    float: right;
     font-family: 'Space Mono', monospace;
     font-size: 1.2em;
 }
@@ -134,7 +133,6 @@ body{
 
 #container > #grid1 > #box3 > input::placeholder {
     color: hsl(183, 40%, 40%);
-    float: right;
     font-family: 'Space Mono', monospace;
     font-size: 1.2em;
 }
